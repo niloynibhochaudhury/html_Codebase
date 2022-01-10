@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Try</title>
-<!--    <style>-->
-<!--    body {background-color: lightgreen;}-->
-<!--    h1   {background-color:orange;-->
-<!--            color: blue;-->
-<!--                     text-align:center;-->
-<!--         }-->
-<!--    p    {color: red;}-->
-<!--    </style>-->
+    <style>
+    body {background-color: lightgreen;}
+    h1   {background-color:orange;
+            color: blue;
+                     text-align:center;
+         }
+    p    {color: red;}
+    body {
+      background-image: url('/images/html_css_js_2.png');
+      background-repeat: no-repeat;
+    }
+    </style>
 <!--    <link rel="stylesheet" href="styles.css">-->
-    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+<!--    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">-->
 </head>
 <!--<body style="background-color:powderblue;">-->
 <body>
@@ -20,6 +24,7 @@
 <!--    <h1 style="background-color:orange;color:white;text-align:center;">This is heading 1</h1>-->
     <h2>This is heading 2</h2>
     <h3 style="color:SlateBlue;font-size:150%">This is heading 3</h3>
+
     <p>This is a <b>paragraph.</b></p>
 <!--    <a href="https://www.w3schools.com">Visit W3Schools</a>-->
 <!--    <a href="https://www.w3schools.com" target="_top">Visit W3Schools</a>-->
@@ -30,10 +35,19 @@
     <h2>Relative URLs</h2>
     <p><a href="/images/full_stack.jfif">Full Stack Images</a></p>
     <p><a href="/images/html_css_1.png">HTML CSS Images</a></p>
+    <button onclick="document.location='/images/html_css_1.png'">HTML Tutorial</button>
+    <a href="#C4">Jump to Chapter 4</a>
+    <p>
+        <a href="/images/html_css_js_2.png" title="Opens a HTML/CSS/JS Images">
+            <img src="/images/html_css_1.png" alt="HTML CSS Images" style="width:100px;height:42px;">
+        </a>
+    </p>
     <p>
         <img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="W3Schools.com" width="70" height="80">
     </p>
     <p style="color:red;size:20;">This is a red paragraph.</p>
+    <div style="background-image: url('/images/html_css_1.png');">
+    <h2 id="C4">Chapter 4</h2>
     <p>
     This paragraph
     <br>contains a lot of lines
@@ -98,5 +112,15 @@
     <h1 style="border:2px solid Tomato;">Hello World</h1>
     <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
     <h1 style="border:2px solid Violet;">Hello World</h1>
+    <img src="/images/girl_in_sweater.jfif" alt="Girl in a jacket" style="width:200px;height:300px;">
+    <img src="/images/girl_in_sweater.jfif" alt="Girl in a jacket" width="200px" height="300px">
+    <img src="/images/programning.gif" alt="Computer Man" style="width:300px;height:400px;">
+    <p><img src="/images/programning.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image will float to the right of the text.</p>
+
+    <p><img src="/images/programning.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    The image will float to the left of the text.</p>
+    <hr>
+    <a href="mailto:niloyc1235711@gmail.com">Send email</a>
 </body>
 </html>

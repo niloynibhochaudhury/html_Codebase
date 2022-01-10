@@ -1,0 +1,39 @@
+h1 {
+  background-color: orange;
+  color: blue;
+  font-family: verdana;
+  font-size: 150%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 100%;
+  border: 2px solid powderblue;
+  padding: 1px;
+  margin: 5px;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+

@@ -8,9 +8,22 @@
     table, th, td {
       border:1px solid black;
       border-collapse: collapse;
+<!--      background-color: #96D4D4;-->
+<!--      border-radius: 10px;-->
     }
+<!--    th, td {-->
+<!--      border-style: solid;-->
+<!--      border-color: red;-->
+<!--      background-color: #96D4D4;-->
+<!--    }-->
     th, td {
-      background-color: #96D4D4;
+      padding-top: 5px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 40px;
+    }
+    th {
+      text-align: center;
     }
     </style>
 </head>
@@ -18,10 +31,10 @@
     <br>
     <br>
     <table style="width:50%">
-        <caption style="text-align:center;caption-side:middle;color:blue;font-size:30px;font-weight: bold;">Person Ages</caption>
+        <caption style="text-align:center;caption-side:middle;color:blue;font-size:30px;font-weight:bold;">Person Ages</caption>
         <tr>
-            <th>Person 1</th>
-            <th>Person 2</th>
+            <th colspan="2">Person Names</th>
+<!--            <th>Person 2</th>-->
             <th>Person 3</th>
         </tr>
         <tr>
@@ -34,6 +47,25 @@
             <td>14</td>
             <td>10</td>
         </tr>
+    </table>
+    <br>
+    <br>
+    <table style="width:50%">
+      <tr style="height:30px">
+        <th style="width:60%">Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
     </table>
 </body>
 </html>

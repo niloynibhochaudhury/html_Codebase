@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>My First Try</title>
-    <style>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <style>
     body {background-color: lightgreen;}
     h1   {background-color:orange;
             color: blue;
@@ -14,7 +16,7 @@
       background-image: url('/images/html_css_js_2.png');
       background-repeat: no-repeat;
     }
-    </style>
+    </style>-->
 <!--    <link rel="stylesheet" href="styles.css">-->
 <!--    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">-->
 </head>
@@ -46,7 +48,7 @@
         <img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="W3Schools.com" width="70" height="80">
     </p>
     <p style="color:red;size:20;">This is a red paragraph.</p>
-    <div style="background-image: url('/images/html_css_1.png');">
+<!--    <div style="background-image: url('/images/html_css_1.png');">-->
     <h2 id="C4">Chapter 4</h2>
     <p>
     This paragraph
@@ -122,5 +124,39 @@
     The image will float to the left of the text.</p>
     <hr>
     <a href="mailto:niloyc1235711@gmail.com">Send email</a>
+    <img src="/images/girl_in_sweater.jfif" alt="Girl in a jacket">
+    <div id="xRes">Top:<span></span></div>
+    <div id="yRes">Left:<span></span></div>
+
+    <input type="button" id="getPos" value="Get X,Y"/>
+
+    <img src="/images/girl_in_sweater.jfif" id="myImg"/>
+    <br>
+    <img src="/images/girl_in_sweater.jfif" alt="Girl in Sweater" usemap="#girlswt">
+
+<!--    <map name="girlswt">
+        <area shape="rect" coords="65, 71, 148, 130" alt="Cap" href="/images/cap.jfif">
+        <area shape="rect" coords="26, 127, 179, 184" alt="Sweater" href="/images/sweater.jfif">
+    </map>-->
+
+    <map name="girlswt">
+      <area shape="rect" coords="65, 71, 148, 130" alt="Cap" href="/images/cap.jfif" onclick="myFunction()">
+    </map>
+
+    <script>
+    function myFunction() {
+      alert("You clicked the coffee cup!");
+    }
+    </script>
+
+    <br>
+    <p>This is an example of auto adjustable images</p>
+    <picture>
+      <source media="(min-width: 650px)" srcset="/images/girl_in_sweater.jfif">
+      <source media="(min-width: 465px)" srcset="/images/full_stack.jfif">
+      <img src="/images/html_css_1.png" alt="HTML CSS Picture">
+    </picture>
+
+
 </body>
 </html>

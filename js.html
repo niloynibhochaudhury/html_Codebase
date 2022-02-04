@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Sample JS</title>
+    <link rel="icon" type="image/x-icon" href="/images/JS.jfif">
+</head>
+<body>
+<!--    <h2>Use JavaScript to Change Text</h2>-->
+<!--    <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>-->
+
+<!--    <p id="demo">This is a DEMO!!! </p>-->
+
+<!--    <script>-->
+<!--    document.getElementById("demo").innerHTML = "Hello JavaScript!";-->
+<!--    document.getElementById("demo").style.fontSize = "25px";-->
+<!--    document.getElementById("demo").style.color = "red";-->
+<!--    document.getElementById("demo").style.backgroundColor = "yellow";-->
+<!--    </script>-->
+
+    <h1>My First JavaScript</h1>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <script>
+    function light(sw) {
+      var pic;
+      if (sw == 0) {
+        pic = "./Images/bulb_off.jfif"
+      } else {
+        pic = "./Images/bulb_on.gif"
+      }
+      document.getElementById('myImage').src = pic;
+    }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+    <img id="myImage" src="./Images/bulb_off.jfif" width="100" height="180">
+
+    <p>
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+</body>
+</html>
